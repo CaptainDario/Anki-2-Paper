@@ -1,0 +1,44 @@
+las ciencias sociales;Sozialwissenschaften
+la ciencia;Wissenschaft
+las ciencias jurídicas;Rechtswissenschaften
+el derecho;Recht, Jura
+el trabajo social;Sozialarbeit
+las relaciones laborales;Unternehmensorganisation, Personalwesen
+la relación;Bezug, Beziehung
+las finanzas;Finanzen, Finanzwesen, Finanzwirtschaft
+las ciencias políticas;Politikwisschenschaften
+la economía;Wirtschaft
+el arte;Kunst
+las humanidades;Geisteswissenschaften
+las bellas artes;Schöne Künste
+la historia;Geschichte
+el periodismo;Journalismus, Publizistik, Journalistik
+la filología;Philologie, Sprachwissenschaft
+portugués/-esa;portugiesisch
+las lenguas modernas;moderne Sprachen
+las ciencias;Naturwissenschaften
+la química;Chemie
+las matemáticas;Mathematik
+la física;Physik
+la biología;Biologie
+las ciencias de la salud;Gesundheitswissenschaften
+la farmacia;Pharmazie
+la medicina;Medizin
+la veterinaria;Tiermedizin
+la enfermería;Krankenpflege
+la arquitectura;Architektur
+e (vor i-, hi-);und
+la ingeniería;Ingenieurwesen, Maschinenbau
+la ingeniería industrial;Wirtschaftsingenieurwesen, Industrietechnik
+la ingeniería civil;Bauingenieurwesen
+el diseño industrial;Industriedesign
+la ingeniería informática;Ingenieurinformatik
+la gestión de proyectos;Projektmanagement
+¿Qué significa...?;Was bedeutet ...?
+más;mehr, weitere
+¿Cómo se pronuncia...?;Wie spricht man ... aus?
+¿Paella se escribe con elle o con ye?;Schreibt man Paella mit ,ll" oder mit „Y“?
+¿Qué significa quiero quedarme aquí?;Was bedeutet ,quiero quedarme aquí"?
+¿Se dice niño o ñino con eñe al principio?;Sagt man niño oder ñino mit „ñ“ am Wortanfang?
+¿En qué página está el ejercicio de la jota?;Auf welcher Seite ist die Übung mit dem ,j"?
+¿Cómo se pronuncia la ce en Ciceron?;Wie spricht man das „c" in Cicerón aus?

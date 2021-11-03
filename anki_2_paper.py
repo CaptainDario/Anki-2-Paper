@@ -12,6 +12,7 @@ collection_path = r"C:\Users\dario\AppData\Roaming\Anki2"
 user_name = "User 1"
 deck_name = r"Sprachen\x1fSpanisch\x1fSpanisch Vokabeln"
 print_tag = "print"
+output_file = "out"
 
 inch = 25.4
 scale = 300
@@ -162,4 +163,4 @@ if __name__ == "__main__":
 
     for c, f in enumerate(list(chunks(filtered, 5*4*4))):
         img = put_notes_on_flashcard(f)
-        img.save(f"out{str(c)}.png")
+        img.save(f"{output_file}{str(c)}.png")

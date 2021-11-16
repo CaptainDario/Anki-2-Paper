@@ -5,12 +5,13 @@ import math
 from PIL import Image, ImageFont, ImageDraw, ImageChops
 import ankipandas
 from ankipandas import Collection
+from tqdm import tqdm
 
 
 
 collection_path = r"C:\Users\dario\AppData\Roaming\Anki2"
 user_name = "User 1"
-deck_name = r"Sprachen\x1fSpanisch\x1fSpanisch Vokabeln"
+deck_name = r"Spanisch\x1fSpanisch Vokabeln"
 print_tag = "print"
 output_file = "out"
 
@@ -151,16 +152,21 @@ if __name__ == "__main__":
     col = Collection(collection_path, user=user_name)
     cards = col.cards.merge_notes()
     cards["cdeck"].unique()
-    #notes_from_deck = cards.query(f"cdeck == '{deck_name}'")
-    notes_from_deck = cards.query(r"cdeck == 'Sprachen\x1fSpanisch\x1fSpanisch Vokabeln'")
+    
+    query = f"cdeck == '{deck_name}'"
+    notes_from_deck = cards.query(query)
    
     # get all notes which have the tag 'print'
     notes = notes_from_deck[["nflds", "ntags"]]
     filtered = [note for tags, note in zip(notes["ntags"], notes["nflds"]) if print_tag in tags]
 
     if(len(filtered) == 0):
-        raise Exception(f"There are no notes marked with the tag: '{print_tag}'. Only notes with this tag will be used for creating flash cards!")
+        s = f"There are no notes marked with the tag: '{print_tag}' Only notes with this tag will be used for creating flash cards!"
+        raise Exception(s)
 
-    for c, f in enumerate(list(chunks(filtered, 5*4*4))):
-        img = put_notes_on_flashcard(f)
-        img.save(f"{output_file}{str(c)}.png")
+    card_pages = list(chunks(filtered, 5*4*4))
+    with tqdm(total=len(card_pages)) as pbar:
+        for c, f in tqdm(enumerate(card_pages)):
+            img = put_notes_on_flashcard(f)
+            img.save(f"{output_file}{str(c)}.png")
+            pbar.update(1)
